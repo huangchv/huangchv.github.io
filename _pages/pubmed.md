@@ -2,6 +2,8 @@
 layout: single
 author_profile: true
 permalink: /pubmed/
+title: Textmining fun with Pubmed
+description: Fun is an arbitrary value between 1 and 10
 ---
 
 # Introduction
