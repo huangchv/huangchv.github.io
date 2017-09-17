@@ -46,7 +46,7 @@ In total, 30k abstracts were pulled from PubMed, but 70 were missing abstracts *
 ### Are there journals that are over-represented?
 We extracted the top 10 recurrent journals and appended journals that we typically aim to publish in. 
 
-{% include figure image_path="/assets/pubmed/2017-09-10_popular_journals.png" alt="Figure 1. Popular Journals" caption="**Figure 1**. Top 10 recurrent journals in the dataset and popular journals that our lab aims to publish in. Forest plot indicates median number of citations as well as the distribution of citations for studies in the paper. Impact factor of journal is indicated in barplot on the right." %}
+{% include figure image_path="/assets/images/pubmed/2017-09-10_popular_journals.png" alt="Figure 1. Popular Journals" caption="**Figure 1**. Top 10 recurrent journals in the dataset and popular journals that our lab aims to publish in. Forest plot indicates median number of citations as well as the distribution of citations for studies in the paper. Impact factor of journal is indicated in barplot on the right." %}
 
 We find that PloS one is a clear outlier with ~3% of the dataset going into the journal. The distribution of citations for PloS one paper tends to be fairly low. Interestingly, the third most popular journal was the Proceedings of the National Academy of Science (PNAS), which outputs papers with a right skewed distribution of citations. In contrast, fewer papers were published in higher impact journals such as the trifecta - Nature, Science, and Cell - and these tended to also have a right skew, but a higher median number of citations. 
 
