@@ -53,13 +53,16 @@ We find that PloS one is a clear outlier with ~3% of the dataset going into the 
 ### Is there a seasonality effect of manuscript submission? 
 Out of the 30k abstracts, 48.2% have data for month of submission. 
 
-{% include figure image_path="/assets/images/pubmed/2017-09-10_papers_months.png" alt="Figure 2. Paper Season" caption="**Figure 2**. Bottom panel shows distribution of manuscript submission over the 12 months while violin plot above shows the log2 distribution of citations. Colours of barplots denotes 'seasonality'."}
+{% include figure image_path="/assets/images/pubmed/2017-09-10_papers_months.png" alt="Figure 2. Paper Season" caption="**Figure 2**. Bottom panel shows distribution of manuscript submission over the 12 months while violin plot above shows the log2 distribution of citations. Colours of barplots denotes 'seasonality'." %}
 
 There is a clear preference for submission between July and September with fewer manuscripts being submitted during the winter months. Why this trend exists could be due to a myriad of reasons that we cannot prove as it is beyond the scope of this study. However, we can make baseless speculations:
 - Undergraduate student doing a summer project managed to complete it and want to push out a manuscript. 
-- Undergraduate student doing a summer project did not complete it and want to push out a paper anyway because they think science is easy. 
+- Undergraduate student doing a summer project did not complete it and want to push out a paper anyway because they think science is easy and they are hot stuff. 
 - Principal investigator (PI) are all flying to conferences or vacations and got around to reading their backlog of manuscripts and approving them for submission.
-- During the winter, PIs are at home with their family and knows that editors are on vacation too. 
+- During the winter, PIs are at home with their family and knows that editors are on vacation too so your manuscript goes onto the pile of 'To Dos'. 
+
+We can take the analysis a bit further by returning to the target journal set. It is important to keep in mind that the data that was extracted from PubMed are only for papers that were accepted and *published* by the journal. 
+{% include figure image_path="/assets/images/pubmed/2017-09-10_journals_months.png" alt="Figure 3. Journal Season" caption="**Figure 3**. Individual season frequency plot for journals of interest. Journals are indicated at the top of their panels. Most successful papers in high impact journals were *not* submitted during the winter. NEJM did not report submission information." %}
 
 
 
