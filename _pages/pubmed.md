@@ -32,12 +32,12 @@ Data was pulled from from the PubMed API using the RISmed R package. Query to AP
 ## Parsing 
 The syuzhet R package was used to perform NRC sentiment analysis on the text of each abstract. Sentiment values were retained as features for downstream analyses.
 
-Journal impact factors and Eigenfactors from 2017 were obtained from Thomas Reuters and placed into a lookup table. Journal names were cleaned up and parsed to match the names in the impact factor lookup data as well as possible before being matched with an impact factor and Eigenfactor. Remaining journal names that defied parsing and matching to lookup table were assigned an impact factor value from a Gaussian distribution centered around 2.5 and an SD of 0.83, while the an Eigenfactor was assigned a value from a distribution centered around 0.002120 and an SD of 0.0007066667.
+Journal impact factors and Eigenfactors from 2017 were obtained from Thomas Reuters and placed into a lookup table. Journal names were cleaned up and parsed to match the names in the impact factor lookup data as well as possible before being matched with an impact factor and Eigenfactor. Remaining journal names that defied parsing and matching to lookup table were assigned an impact factor from a Gaussian distribution centered around 2.5 and an SD of 0.83, while an Eigenfactor was assigned from a distribution centered around 0.002120 and an SD of 0.0007066667.
 
 The tm R package was used to clean up the title and abstract text, remove stopwords, extract stem words, before converting word frequencies to 'term frequency-inverse document frequency' (TF-IDF). Sparse terms that occured in less than 5% of abstracts or less than 1% of titles were dropped. Title and abstract TF-IDF were extracted separately, and are used separately as features. 
 
 ## Model fitting
-boooop
+boooop WIP
 
 # Results
 ## Summary stats
@@ -64,6 +64,6 @@ There is a clear preference for submission between July and September with fewer
 We can take the analysis a bit further by returning to the target journal set. It is important to keep in mind that the data that was extracted from PubMed are only for papers that were accepted and *published* by the journal. 
 {% include figure image_path="/assets/images/pubmed/2017-09-10_journals_months.png" alt="Figure 3. Journal Season" caption="**Figure 3**. Individual season frequency plot for journals of interest. Journals are indicated at the top of their panels. Most successful papers in high impact journals were *not* submitted during the winter. NEJM did not report submission information." %}
 
-
+Although there are fewer papers from the target journals, Figure 3 shows a clear derth of published papers that were submitted in January or December. It is difficult to draw a conclusion without seeing the number of papers that were submitted in each month. Are editors and reviewers more harsh during the winter? Or are there fewer manuscripts being submitted? 
 
 Work In Progress
