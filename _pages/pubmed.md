@@ -27,7 +27,7 @@ Here, I will present a tongue-in-cheek analysis of citations based on text minin
 
 # Methods
 ## Dataset 
-Data was pulled from from the PubMed API using the RISmed R package. Query to API was `"journal article"[Publication Type] AND "english"[Language] AND hasabstract[text]` as it will ideally yield English research papers with an abstract. We extracted 5,000 abstracts for each year from 2010 to 2015. To avoid pulling papers in order, which will produce swathes of papers from the same journal, the function pulls queries for 10x the number of requested abstracts, and then randomly selects 'n' from the returned PMIDs. From each abstract object, we extracted title, abstract, author's list, number of citations, month submitted, and month published. Abstracts without text in the actual abstract were dropped.
+Data was pulled from from the PubMed API using the RISmed R package. Query to API was `"journal article"[Publication Type] AND "english"[Language] AND hasabstract[text]` as it will ideally yield English research papers with an abstract. We extracted 5,000 abstracts for each year from 2010 to 2015. To avoid pulling papers in order, which will produce swathes of papers from the same journal, the function queries for 10x the number of requested abstracts, and then randomly selects the requested number from the returned PMIDs. From each abstract object, we extracted title, abstract, author's list, number of citations, month submitted, and month published. Abstracts without text in the actual abstract were dropped.
 
 ## Parsing 
 The syuzhet R package was used to perform NRC sentiment analysis on the text of each abstract. Sentiment values were retained as features for downstream analyses.
@@ -48,5 +48,19 @@ We extracted the top 10 recurrent journals and appended journals that we typical
 
 {% include figure image_path="/assets/images/pubmed/2017-09-10_popular_journals.png" alt="Figure 1. Popular Journals" caption="**Figure 1**. Top 10 recurrent journals in the dataset and popular journals that our lab aims to publish in. Forest plot indicates median number of citations as well as the distribution of citations for studies in the paper. Impact factor of journal is indicated in barplot on the right." %}
 
-We find that PloS one is a clear outlier with ~3% of the dataset going into the journal. The distribution of citations for PloS one paper tends to be fairly low. Interestingly, the third most popular journal was the Proceedings of the National Academy of Science (PNAS), which outputs papers with a right skewed distribution of citations. In contrast, fewer papers were published in higher impact journals such as the trifecta - Nature, Science, and Cell - and these tended to also have a right skew, but a higher median number of citations. 
+We find that PloS one is a clear outlier with ~3% of the dataset going into the journal. The distribution of citations for PloS one paper tends to be fairly low. In contrast, the third most popular journal was the Proceedings of the National Academy of Science (PNAS), which outputs papers with a right skewed distribution of citations. Much like PNAS, higher impact journals such as the trifecta - Nature, Science, and Cell - have similar citation distributions for their smaller number of papers, but with a higher median, and a greater skew. 
 
+### Is there a seasonality effect of manuscript submission? 
+Out of the 30k abstracts, 48.2% have data for month of submission. 
+
+{% include figure image_path="/assets/images/pubmed/2017-09-10_papers_months.png" alt="Figure 2. Paper Season" caption="**Figure 2**. Bottom panel shows distribution of manuscript submission over the 12 months while violin plot above shows the log2 distribution of citations. Colours of barplots denotes 'seasonality'."}
+
+There is a clear preference for submission between July and September with fewer manuscripts being submitted during the winter months. Why this trend exists could be due to a myriad of reasons that we cannot prove as it is beyond the scope of this study. However, we can make baseless speculations:
+- Undergraduate student doing a summer project managed to complete it and want to push out a manuscript. 
+- Undergraduate student doing a summer project did not complete it and want to push out a paper anyway because they think science is easy. 
+- Principal investigator (PI) are all flying to conferences or vacations and got around to reading their backlog of manuscripts and approving them for submission.
+- During the winter, PIs are at home with their family and knows that editors are on vacation too. 
+
+
+
+Work In Progress
