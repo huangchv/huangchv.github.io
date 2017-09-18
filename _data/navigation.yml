@@ -1,9 +1,9 @@
 # main links
 main:
-  - title: "Pubmed Project"
-    url: https://huangchv.github.io/pubmed/
   - title: "Publications"
     url: https://huangchv.github.io/publications/
+  - title: "Pubmed Project"
+    url: https://huangchv.github.io/pubmed/
   # - title: "Sample Posts"
   #   url: /year-archive/
   # - title: "Sample Collections"
