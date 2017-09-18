@@ -2,8 +2,8 @@
 main:
   - title: "Pubmed Project"
     url: https://huangchv.github.io/pubmed/
-  # - title: "About"
-  #   url: https://mmistakes.github.io/minimal-mistakes/about/
+  - title: "Publications"
+    url: https://huangchv.github.io/publications/
   # - title: "Sample Posts"
   #   url: /year-archive/
   # - title: "Sample Collections"
