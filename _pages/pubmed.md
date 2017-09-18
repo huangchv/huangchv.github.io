@@ -50,7 +50,7 @@ We extracted the top 10 recurrent journals and appended journals that we typical
 
 We find that PloS one is a clear outlier with ~3% of the dataset going into the journal. The distribution of citations for PloS one paper tends to be fairly low. In contrast, the third most popular journal was the Proceedings of the National Academy of Science (PNAS), which outputs papers with a right skewed distribution of citations. Much like PNAS, higher impact journals such as the trifecta - Nature, Science, and Cell - have similar citation distributions for their smaller number of papers, but with a higher median, and a greater skew. 
 
-### Is there a seasonality effect of manuscript submission? 
+### Do manuscript submissions wax and wane with the seasons? 
 Out of the 30k abstracts, 48.2% have data for month of submission. 
 
 {% include figure image_path="/assets/images/pubmed/2017-09-10_papers_months.png" alt="Figure 2. Paper Season" caption="**Figure 2**. Bottom panel shows distribution of manuscript submission over the 12 months while violin plot above shows the log2 distribution of citations. Colours of barplots denotes 'seasonality'." %}
@@ -64,6 +64,6 @@ There is a clear preference for submission between July and September with fewer
 We can take the analysis a bit further by returning to the target journal set. It is important to keep in mind that the data that was extracted from PubMed are only for papers that were accepted and *published* by the journal. 
 {% include figure image_path="/assets/images/pubmed/2017-09-10_journals_months.png" alt="Figure 3. Journal Season" caption="**Figure 3**. Individual season frequency plot for journals of interest. Journals are indicated at the top of their panels. Most successful papers in high impact journals were *not* submitted during the winter. NEJM did not report submission information." %}
 
-Although there are fewer papers from the target journals, Figure 3 shows a clear derth of published papers that were submitted in January or December. It is difficult to draw a conclusion without seeing the number of papers that were submitted in each month. Are editors and reviewers more harsh during the winter? Or are there fewer manuscripts being submitted? 
+Although there are fewer papers from the target journals, Figure 3 shows a clear dearth of published papers that were submitted in January or December. It is difficult to draw a conclusion without seeing the number of papers that were submitted in each month. Are editors and reviewers more harsh during the winter? Or are there fewer manuscripts being submitted? Needless to say, it appears best to submit manuscripts when it is warm. 
 
 Work In Progress
