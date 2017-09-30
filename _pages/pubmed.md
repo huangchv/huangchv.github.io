@@ -43,9 +43,9 @@ boooop WIP
 ## Summary stats
 In total, 30k abstracts were pulled from PubMed, but 70 were missing abstracts *(of course, why should life ever be so easy)*. We proceeded with the remaining 29,930 abstracts. The extracted feature set consisted of 141 and 313 TF-IDF values from the title, and abstract respectively, the 10 NRC sentiments, impact factor, Eigenfactor, number of authors, and publication year for a total of 468 features. 
 
-{% include figure image_path="/assets/images/pubmed/citation_cumulative_density.png" alt="Figure 1. Cumulative Density of Citations" caption="**Figure 1**. Cumulative density of citations across the 30k abstracts. Subplot panel shows a higher resolution of the citation density." %}
+{% include figure image_path="/assets/images/pubmed/2017-09-30_citation_cumulative_dist.png" alt="Figure 1. Cumulative Distribution of Citations" caption="**Figure 1**. Cumulative Distribution of citations across the 30k abstracts. Subplot panel shows a higher resolution of the citation distribution." %}
 
-Figure 1 shows the cumulative density of citations and it seems like we approach 99% at approximately 30 citations. It appears that a third of the papers were not cited at all, and if a paper got cited at least twice, then it was already ahead of the curve (Figure 1). 
+Figure 1 shows the cumulative distribution of citations and it seems like we approach 99% at approximately 30 citations. It appears that a third of the papers were not cited at all, and if a paper got cited at least twice, then it was already ahead of the curve (Figure 1). 
 
 ### Are there journals that are over-represented?
 We extracted the top 10 recurrent journals and appended journals that we typically aim to publish in. 
