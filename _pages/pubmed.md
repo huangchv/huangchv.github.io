@@ -38,6 +38,7 @@ The tm R package was used to clean up the title and abstract text, remove stopwo
 
 ## Model fitting
 boooop WIP 
+I'm reallllly lazy. It might just be easier to go through my code instead. 
 
 # Results
 ## Summary stats
@@ -62,7 +63,7 @@ Out of the 30k abstracts, 48.2% have data for month of submission.
 There is a clear preference for submissions between July and September with fewer manuscripts being submitted during the winter months. Why this trend exists could be due to a myriad of reasons that we cannot prove as it is beyond the scope of this study. However, we can make baseless speculations:
 - Undergraduate student doing a summer project managed to complete it and the boss wants to push out a manuscript. 
 - Undergraduate student doing a summer project did not complete it and want to push out a paper anyway because they think science is easy and they are hot stuff. 
-- Principal investigators (PIs) are all flying to conferences in Hawaii  and got around to reading their backlog of manuscripts and approving them for submission while on the plane.
+- Principal investigators (PIs) are all flying to conferences in Hawaii and got around to reading their backlog of manuscripts and approving them for submission while on the plane.
 - During the winter, PIs are at home with their family and knows that editors are on vacation too so your manuscript goes onto the pile of 'To Dos'. 
 
 We can take the analysis a bit further by returning to the target journal set. It is important to keep in mind that the data that was extracted from PubMed were papers that were *accepted and published* by the journal. 
@@ -105,7 +106,7 @@ Anger and anticipation popped out as important sentiments. What words were assoc
 
 Alrighty, so it's clear that papers on cancer will probably receive more citations (Figure 8). On the anticipation side, we see risk and time. How do they fit in? I will probably guess risk stratification for disease (such as cancer), and time to death or relapse, as these are commonly analyzed in cancer datasets. 
 
-## Discussion
+# Discussion
 In this study, we analyzed about 30k abstracts between 2010 and 2015 to determine if certain features can be linked to increased citations. We determined that to maximize citations, the authors should aim to publish in a high impact journal (not easy to do), have many co-authors (easy to do, and people will self-cite), or work in cancer or health research (yes, I would like to refocus this ecological lab to studying mesothelioma. What do you mean no?). At first glance, it is true that highly cited papers tend to be either well used tools like BLAST, or maybe health policy related studies, and of course, cancer, but we failed to take into account the min and max of different fields. Different disciplines may publish in niche journals, and being cited 10 times may be considered successful for that discipline. Moreover, we also don't consider what it means to others to be *successful*. Here, I am equating it to a measurable value. To some, it may be publishing in Nature Genetics, or the trifecta. To others, it could be obtaining a PI position, or maybe even to push out good, sound, replicable science. Perhaps some people like being cited many times. 
 Regardless, success is personal. We should always set reasonable and incremental goals to make ourselves better, and to make the world a better place. =) 
 
