@@ -43,14 +43,14 @@ boooop WIP
 ## Summary stats
 In total, 30k abstracts were pulled from PubMed, but 70 were missing abstracts *(of course, why should life ever be so easy)*. We proceeded with the remaining 29,930 abstracts. The extracted feature set consisted of 141 and 313 TF-IDF values from the title, and abstract respectively, the 10 NRC sentiments, impact factor, Eigenfactor, number of authors, and publication year for a total of 468 features. 
 
-{% include figure image_path="/assets/images/pubmed/2017-09-30_citation_cumulative_dist.png" alt="Figure 1. Cumulative Distribution of Citations" caption="**Figure 1**. Cumulative Distribution of citations across the 30k abstracts. Subplot panel shows a higher resolution of the citation distribution." %}
+{% include figure image_path="/assets/images/pubmed/2017-09-30_citation_cumulative_dist.png" alt="Figure 1. Cumulative Distribution of Citations" caption="**Figure 1**. Cumulative distribution of citations across the 30k abstracts. Subplot panel shows a higher resolution of the citation distribution." %}
 
-Figure 1 shows the cumulative distribution of citations and it appears to approach 99% at approximately 30 citations. Furthermore, a third of the papers were not cited at all, and if a paper received at least two citations, then it was already ahead of the curve (Figure 1). 
+Figure 1 shows the cumulative distribution of citations and it appears to approach 99% at approximately 30 citations. Furthermore, a third of the papers were not cited at all, and if a paper received at least two citations, then it was already *ahead of the curve* (Figure 1). 
 
 ### Are there journals that are over-represented?
 We extracted the top 10 recurrent journals and appended journals that we typically aim to publish in. 
 
-{% include figure image_path="/assets/images/pubmed/2017-09-10_popular_journals.png" alt="Figure 2. Popular Journals" caption="**Figure 2**. Top 10 recurrent journals in the dataset and popular journals that our lab aims to publish in. Forest plot indicates median number of citations as well as the distribution of citations for studies in the paper. Impact factor of journal is indicated in barplot on the right." %}
+{% include figure image_path="/assets/images/pubmed/2017-10-01_popular_journals.png" alt="Figure 2. Popular Journals" caption="**Figure 2**. Top 10 recurrent journals in the dataset and popular journals that our lab aims to publish in. Forest plot indicates median number of citations as well as the distribution of citations for studies in the paper. Impact factor of journal is indicated in barplot on the right." %}
 
 We find that PloS one is a clear outlier with ~3% of the dataset going into the journal. The distribution of citations for PloS one paper tends to be fairly low. In contrast, the third most popular journal was the Proceedings of the National Academy of Science (PNAS), which outputs papers with a right skewed distribution of citations. Much like PNAS, higher impact journals such as the trifecta - Nature, Science, and Cell - have similar citation distributions for their smaller number of papers, but with a higher median, and a greater skew. 
 
@@ -59,10 +59,10 @@ Out of the 30k abstracts, 48.2% have data for month of submission.
 
 {% include figure image_path="/assets/images/pubmed/2017-09-10_papers_months.png" alt="Figure 3. Paper Season" caption="**Figure 3**. Bottom panel shows distribution of manuscript submission over the 12 months while violin plot above shows the log2 distribution of citations. Colours of barplots denotes 'seasonality'." %}
 
-There is a clear preference for submission between July and September with fewer manuscripts being submitted during the winter months. Why this trend exists could be due to a myriad of reasons that we cannot prove as it is beyond the scope of this study. However, we can make baseless speculations:
+There is a clear preference for submissions between July and September with fewer manuscripts being submitted during the winter months. Why this trend exists could be due to a myriad of reasons that we cannot prove as it is beyond the scope of this study. However, we can make baseless speculations:
 - Undergraduate student doing a summer project managed to complete it and the boss wants to push out a manuscript. 
 - Undergraduate student doing a summer project did not complete it and want to push out a paper anyway because they think science is easy and they are hot stuff. 
-- Principal investigator (PI) are all flying to conferences in Hawaii  and got around to reading their backlog of manuscripts and approving them for submission while on the plane.
+- Principal investigators (PIs) are all flying to conferences in Hawaii  and got around to reading their backlog of manuscripts and approving them for submission while on the plane.
 - During the winter, PIs are at home with their family and knows that editors are on vacation too so your manuscript goes onto the pile of 'To Dos'. 
 
 We can take the analysis a bit further by returning to the target journal set. It is important to keep in mind that the data that was extracted from PubMed were papers that were *accepted and published* by the journal. 
