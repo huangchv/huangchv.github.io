@@ -6,11 +6,11 @@ header:
   overlay_color: "#333"
   overlay_filter: "0.5"
   cta_label: "Current Project"
-  cta_url: "https://huangchv.github.io/pubmed/"
+  cta_url: "https://huangchv.github.io/pubmed_classification/"
 excerpt: "Work in progress. Come back later. =)"
 intro: 
   - excerpt: "Have you ever had a question that couldn't be answered by Google or Wikipedia, but could be answered if you weren't too lazy to scrape data from the internet? Me too!"
-pubmed_entry:
+pubmed_p1:
   - image_path: /assets/images/pubmed/2017-09-10_papers_months.png
     alt: "Manuscript submission throughout the year"
     title: "Pubmed Citation Analysis"
@@ -18,8 +18,18 @@ pubmed_entry:
     url: /pubmed/
     btn_label: "Read More"
     btn_class: "btn--primary"
+pubmed_p2:
+  - image_path: /assets/images/pubmed/2017-09-10_papers_months.png
+    alt: "What language do journals use?"
+    title: "Pubmed Citation Analysis"
+    excerpt: "_If I want more high impact journals to accept my paper, how should I write my manuscript?_"
+    url: /pubmed_classification/
+    btn_label: "Read More"
+    btn_class: "btn--primary"
 ---
 
 {% include feature_row id="intro" type="center" %}
 
-{% include feature_row id="pubmed_entry" type="left" %}
+{% include feature_row id="pubmed_p1" type="left" %}
+
+{% include feature_row id="pubmed_p2" type="right" %}
