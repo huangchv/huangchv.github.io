@@ -1,7 +1,7 @@
 ---
 layout: single
 author_profile: true
-permalink: /pubmed_classification/
+permalink: /pubmed_class/
 title: Textmining fun with Pubmed II - The Journal Strikes Back
 description: Tailoring language to journals as easy as 1, 10, 100
 ---
