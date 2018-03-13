@@ -41,11 +41,3 @@
     <script src="{{ script_path }}"></script>
   {% endfor %}
 {% endif %}
-
-<!-- add htmlwidgets files -->
-{% if page.htmlwidgets %}
-  {% assign dep_file = page.url | split: '/' | last | prepend : 'htmlwidgets/' | append : '.html' | replace: '.md', '' %}
-  {% assign dep_file_inc = dep_file | prepend : '_includes/' %}
-  {% include {{dep_file}} %}
-{% endif %}
-<!-- end htmlwidgets files -->
