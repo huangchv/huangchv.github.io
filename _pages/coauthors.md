@@ -1,6 +1,5 @@
 ---
-date: "March 29, 2018"
-layout: postrmd
+layout: single
 author_profile: true
 permalink: /coauthors/
 title: Network Analysis of Breast Cancer Co-Authorships
