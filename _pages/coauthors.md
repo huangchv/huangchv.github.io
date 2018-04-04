@@ -46,8 +46,9 @@ In total, I ended up with 198,187 authors, but I really don't want to make a gra
 I want to cut it off at 10 papers, which just happens to be at an awkward top 3.7th percentile. My reasoning is if you are in academia for the past 10 years, and you average one paper a year, that is not very productive. If you are a young researcher and you are pretty productive, you will easily hit 10 papers. However, if you are just passing through the revolving door of academia, then you probably will not hit 10 papers in the field within 10 years. Thus, I can keep the top 3.7% (7k authors) and have my network be cleaner to look at. 
 I also eliminate coauthor relationships that are smaller than 20. Again, this seems pretty arbitrary but consider the number of people that tend to show up in your papers. If you are coauthors with someone more than twice a year for 10 years, you probably work together or at least closely. Furthermore, this is really to improve the network visualization. 
 
-
-
+### Network Viz Time
+Let's take a quick
+{% include figure image_path="/assets/images/pub_net/2018-04-03_subnetwork_sizes.png" alt="Figure 6. Number of subnetworks at various sizes. ="**Figure 6**. Number of subnetworks at various sizes." %} 
 
 
 
