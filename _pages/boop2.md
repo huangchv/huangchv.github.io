@@ -5,6 +5,8 @@ date: "March 12, 2018"
 htmlwidgets: TRUE
 output: html_document
 layout: postrmd
+classes: wide
+author_profile: false
 permalink: /boop2/
 ---
 
