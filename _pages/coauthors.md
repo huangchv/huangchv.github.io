@@ -48,7 +48,7 @@ I also eliminate coauthor relationships that are smaller than 20. Again, this se
 
 ### Network Viz Time
 Let's take a quick
-{% include figure image_path="/assets/images/pub_net/2018-04-03_subnetwork_sizes.png" alt="Figure 6. Number of subnetworks at various sizes. ="**Figure 6**. Number of subnetworks at various sizes." %} 
+{% include figure image_path="/assets/images/pub_net/2018-04-03_subnetwork_sizes.png" alt="Figure 6. Number of subnetworks at various sizes." caption="**Figure 6**. Number of subnetworks at various sizes." %} 
 
 
 
