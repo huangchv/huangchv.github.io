@@ -47,12 +47,7 @@ I want to cut it off at 10 papers, which just happens to be at an awkward top 3.
 I also eliminate coauthor relationships that are smaller than 20. Again, this seems pretty arbitrary but consider the number of people that tend to show up in your papers. If you are coauthors with someone more than twice a year for 10 years, you probably work together or at least closely. Furthermore, this is really to improve the network visualization. 
 
 ### Network Viz Time
-Let's take a quick
+Let's take a quick look at subnetwork sizes (Figure 6). Immediately, you can see there are a ton of small networks and one giant network consisting of ~4200 authors. 
 {% include figure image_path="/assets/images/pub_net/2018-04-03_subnetwork_sizes.png" alt="Figure 6. Number of subnetworks at various sizes." caption="**Figure 6**. Number of subnetworks at various sizes." %} 
 
-
-
-# Discussion
-
-
-*A journey of a thousand miles begins with a single step.*  
+[Subgraph 1](https://huangchv.github.io/boop2/)
