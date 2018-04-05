@@ -32,5 +32,5 @@ build_article <- function(filename) {
   brocks::htmlwidgets_deps(source)
 }
 setwd('E:\\github/huangchv.github.io/')
-build_article('boop2')
+build_article('coauthors_sg1')
 build_article('coauthors_not_sg1')

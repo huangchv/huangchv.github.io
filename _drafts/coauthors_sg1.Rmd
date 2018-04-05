@@ -1,0 +1,60 @@
+---
+title: "Subgraph 1"
+author: "Vincent Huang"
+date: "April 4, 2018"
+htmlwidgets: TRUE
+output: html_document
+layout: postrmd
+classes: wide
+author_profile: true
+permalink: /coauthors_sg1/
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+
+```{r, echo=FALSE}
+library(RColorBrewer)
+library(plotly)
+load(file='E:\\Analyses/pub_net/2018-04-03_sg1_data.rda')
+
+pal1 <- brewer.pal(3, 'Spectral')
+pal2 <- c('grey50', brewer.pal(9, 'Set3'))
+pal.all <- c(pal1[2:3], pal2)
+max.nsize <- max(node.df$nodesize)
+network <- plot_ly() %>%
+  add_trace(data = node.df, x = ~xn, y = ~yn, z = ~zn, type = 'scatter3d', mode = "markers", color = ~nodesize, colors = ~pal1, name = 'Pubs', 
+            marker = list(size = ~nodesize, 
+                          sizemode = 'diameter',
+                          sizemin = 4,
+                          sizeref = 2.* max.nsize /(10.**2)
+            ),
+            hoverinfo = 'text', 
+            text = ~paste(index_name, 
+                          '<br>Papers Published: ', pubs,
+                          '<br>Mean citations: ', round(mean_cites, 2)
+            )
+  ) %>%
+  add_trace(data = edges.forplot, x = ~allx, y = ~ally, z = ~allz,  type = 'scatter3d', mode = "lines", hoverinfo = 'none', connectgaps=FALSE, showlegend = TRUE, name = "CoAuthorship" ,
+            line=list(color = 'rgba(158, 202, 225, 0.20)',
+                      width = 0.20))
+
+axis <- list(title = "", showgrid = FALSE, showticklabels = FALSE, zeroline = FALSE)
+
+networkplot <- layout(
+  network,
+  title = "Breast Cancer Paper Coauthorship<br>2007-2017<br>Subgroup 1",
+  titlefont = list(color = 'rgb(250, 250, 250)'),
+  scene = list(
+    xaxis = axis,
+    yaxis = axis,
+    zaxis = axis
+  ),
+  paper_bgcolor = 'rgb(37,42,52)',
+  plot_bgcolor = 'rgb(37,42,52)'
+)
+networkplot$sizingPolicy$padding <-0
+networkplot
+```
