@@ -15,7 +15,7 @@ knitr::opts_chunk$set(echo = TRUE)
 ```
 
 
-```{r, echo=FALSE}
+```{r, fig.width = 8, fig.height = 8, echo=FALSE}
 library(RColorBrewer)
 library(plotly)
 load(file='E:\\Analyses/pub_net/2018-04-04_not_sg1_data.rda')
@@ -54,10 +54,8 @@ networkplot <- layout(
     yaxis = axis,
     zaxis = axis
   ),
-  paper_bgcolor = 'rgb(37,42,52)',
-  plot_bgcolor = 'rgb(37,42,52)'
+  paper_bgcolor = 'rgb(1,1,1)',
+  plot_bgcolor = 'rgb(1,1,1)'
 )
-
-networkplot$sizingPolicy$padding <-0
 networkplot
 ```
