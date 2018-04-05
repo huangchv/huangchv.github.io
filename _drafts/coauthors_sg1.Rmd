@@ -52,8 +52,8 @@ networkplot <- layout(
     yaxis = axis,
     zaxis = axis
   ),
-  paper_bgcolor = 'rgb(1,1,1)',
-  plot_bgcolor = 'rgb(1,1,1)'
+  paper_bgcolor = 'rgb(37,42,52)',
+  plot_bgcolor = 'rgb(37,42,52)'
 )
 networkplot$sizingPolicy$padding <-0
 networkplot
