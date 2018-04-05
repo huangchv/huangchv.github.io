@@ -50,4 +50,5 @@ I also eliminate coauthor relationships that are smaller than 20. Again, this se
 Let's take a quick look at subnetwork sizes (Figure 6). Immediately, you can see there are a ton of small networks and one giant network consisting of ~4200 authors. 
 {% include figure image_path="/assets/images/pub_net/2018-04-03_subnetwork_sizes.png" alt="Figure 6. Number of subnetworks at various sizes." caption="**Figure 6**. Number of subnetworks at various sizes." %} 
 
-[Subgraph 1](https://huangchv.github.io/boop2/)
+[Subgraph 1](https://huangchv.github.io/coauthors_sg1/)
+[Large subgraphs minus SG1](https://huangchv.github.io/coauthors_not_sg1/)
