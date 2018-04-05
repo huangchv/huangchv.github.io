@@ -15,7 +15,7 @@ knitr::opts_chunk$set(echo = TRUE)
 ```
 
 
-```{r,  fig.width = 8, fig.height = 8, echo=FALSE}
+```{r,  fig.width = 10, fig.height = 8, echo=FALSE}
 library(RColorBrewer)
 library(plotly)
 load(file='E:\\Analyses/pub_net/2018-04-03_sg1_data.rda')
