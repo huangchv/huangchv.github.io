@@ -4,7 +4,7 @@ author: "Vincent Huang"
 date: "April 4, 2018"
 htmlwidgets: TRUE
 output: html_document
-layout: postrmd
+layout: single
 classes: wide
 author_profile: true
 permalink: /coauthors_sg1/
