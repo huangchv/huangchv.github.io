@@ -4,8 +4,8 @@ main:
     url: https://huangchv.github.io/publications/
   - title: "Pubmed Project"
     url: https://huangchv.github.io/pubmed/
-  - title: "Pubmed Classifier"
-    url: /pubmed_class/
+  - title: "Network Viz"
+    url: /coauthors/
   # - title: "Sample Collections"
   #   url: /collection-archive/
   # - title: "Sitemap"
